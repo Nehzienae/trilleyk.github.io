@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html> 
+
+    
+	<head>
+	    <title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	
+	<body>
+	
+	
+	<div class="background">
+	
+	<div class="navigation">
+	   <a class="a active" href="#">HOME</a>
+	   <a class="b" href="#">ABOUT</a>
+	   <a class="c" href="#">GALLERY</a>
+	   <a class="d" href="#">CONTACT</a>
+	</div> 
+	
+	<div class="content">
+	     <div class="home">
+		    <h1>I am Trilley K</h1>
+			<h3>Rapper, Song-writer, Recording Artist</h3>
+	     </div>
+	
+	
+	  <div class="aboutme">
+	   <p>Hello Friends <br>
+	   My name is Mohammed Kamara, proffesionally known as Trilley K, born and raised
+       in South Africa, thriving to become an international artist. I started rapping 
+	    at the age of 11 and it was all because i heard my cousin rapping and i was 
+	    amazed because i didn't know people could make their own music.<br></p>
+        <br>
+     
+        <p> The reason i now rap is to remind the world that there is truth in the lies
+	      we live in. My goal is not to expose classified secrets as such, but to help
+		  those that do not know about life now.There are a lot a feelings and emotions
+		  that we don't understand , that they don't understand.
+		  i feel it is because they far away from the Lord Above, God.<br>
+		  Message to the fans: i don't do it only for riches but i'll take the wealth.
+		  i do it for the truth and pure love for music.<br></p>
+		  
+	  </div>
+	  
+	      <div class="gallery">
+		  <h1>This is my Gallery</h1>
+		       <div class="image">
+			     <img src="images/IMG-20200813-WA0032.jpg"/>
+			   </div> 
+			
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0031.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0035.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0034.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0028.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0033.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0037.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0030.jpg"/>
+			   </div>
+			   
+			   <div class="image">
+			     <img src="images/IMG-20200813-WA0029.jpg"/>
+			   </div>
+			</div>
+			   
+		<div class="contactme">
+		     <div class="contactform">
+			     <form action="" method="post">
+				 
+				    <input type="text" name="" class="inputtext" value="First Name">
+					<input type="text" name="" class="inputtext" value="Last Name">
+					<input type="text" name="" class="inputtext"value="Your Email">
+					<textarea cols="4" rows="6" class="inputmessage"> Your Message...</textarea>
+					<input type="button" name="" class="submit" value="Submit">
+				 </form>
+			 </div>
+			 
+			</div>
+		
+      </div>  
+	    
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+		    $('a').click(function(){
+			    var selected = $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+			});
+			
+			var $a=$('.a'),
+			$b=$('.b'),
+			$c=$('.c'),
+			$d=$('.d'),
+			$home=$('.home'),
+			$aboutme=$('.aboutme');
+			$gallery=$('.gallery'),
+			$contactme=$('.contactme');
+			
+			$a.click(function(){
+			    $home.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+			});
+			
+			$b.click(function(){
+			    $aboutme.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+			});
+			$c.click(function(){
+			    $gallery.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$contactme.fadeOut();
+			});
+			$d.click(function(){
+			    $contactme.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$home.fadeOut();
+			});
+		});
+		
+	</script>
+	</div>
+	</body>
+	
+	<footer>
+	
+	</footer>
+	
+	
+</html>
